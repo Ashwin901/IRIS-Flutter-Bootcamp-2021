@@ -31,7 +31,7 @@ class _AddContactState extends State<AddContact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffffcc29),
+      backgroundColor: bgColor,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 15),
         child: Center(
@@ -59,7 +59,7 @@ class _AddContactState extends State<AddContact> {
                             'Click here to add image',
                             textAlign: TextAlign.center,
                             style: mainTextStyle.copyWith(
-                              color: Color(0xffffcc29),
+                              color: bgColor,
                             ),
                           ))
                         : Container(),
@@ -110,7 +110,7 @@ class _AddContactState extends State<AddContact> {
                     child: Text(
                       'Add',
                       style: mainTextStyle.copyWith(
-                        color: Color(0xffffcc29),
+                        color: bgColor,
                       ),
                     ),
                     color: Colors.black)

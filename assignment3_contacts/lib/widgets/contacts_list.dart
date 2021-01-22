@@ -13,14 +13,14 @@ Widget contactsList(Box box, BuildContext context) {
         final image = MemoryImage(contact.profileImage);
         return Card(
           elevation: 10,
-          color: Color(0xffffcc29),
+          color: bgColor,
           child: ListTile(
               leading: Container(
                 height: 60,
                 width: 60,
                 child: CircleAvatar(
                   backgroundImage: image,
-                  backgroundColor: Color(0xffffcc29),
+                  backgroundColor: bgColor,
                 ),
               ),
               title: Text(

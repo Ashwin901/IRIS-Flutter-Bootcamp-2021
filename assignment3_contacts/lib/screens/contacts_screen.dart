@@ -22,9 +22,9 @@ class _ContactsScreenState extends State<ContactsScreen> {
           style: mainTextStyle.copyWith(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xffffcc29),
+        backgroundColor: bgColor,
       ),
-      backgroundColor: Color(0xffffcc29),
+      backgroundColor: bgColor,
       body: ValueListenableBuilder(
           valueListenable: Hive.box('contacts').listenable(),
           builder: (context, box, _) {
@@ -42,7 +42,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
         backgroundColor: Colors.black,
         child: Icon(
           Icons.add,
-          color: Color(0xffffcc29),
+          color: bgColor,
         ),
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {

@@ -6,3 +6,5 @@ const TextStyle mainTextStyle =
 
 OutlineInputBorder inputBorder =
     OutlineInputBorder(borderRadius: BorderRadius.circular(20));
+
+const Color bgColor = Color(0xffffcc29);

@@ -22,7 +22,7 @@ class _UpdateContactState extends State<UpdateContact> {
   final picker = ImagePicker();
   String name, phoneNumber;
   var newImage;
-  Color bColor = Color(0xffffcc29);
+  Color bColor = bgColor;
 
   Future getImage() async {
     final pickedImage = await picker.getImage(source: ImageSource.gallery);
@@ -47,7 +47,7 @@ class _UpdateContactState extends State<UpdateContact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xffffcc29),
+        backgroundColor: bgColor,
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 15),
           child: Center(
@@ -128,7 +128,7 @@ class _UpdateContactState extends State<UpdateContact> {
                     child: Text(
                       "Update",
                       style: mainTextStyle.copyWith(
-                        color: Color(0xffffcc29),
+                        color: bgColor,
                       ),
                     ),
                   ),
