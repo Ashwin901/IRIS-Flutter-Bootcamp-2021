@@ -1,16 +1,9 @@
 # contacts
+This is a flutter application to add,edit and delete contacts.
+The app uses image picker package to get profile images. Hivedb is used to save contacts.
+The user has can select an image for the contact if not a default image is added.
 
-A new Flutter project.
+## App demo
 
-## Getting Started
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/56069189/105570365-e6820b00-5d6e-11eb-9fec-2a0c0e3862af.gif)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
