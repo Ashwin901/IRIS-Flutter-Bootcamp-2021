@@ -31,7 +31,6 @@ class _UpdateContactState extends State<UpdateContact> {
         print("Please select an image");
       } else {
         image = File(pickedImage.path);
-        newImage = image;
       }
     });
   }
@@ -121,8 +120,13 @@ class _UpdateContactState extends State<UpdateContact> {
                   FlatButton(
                     color: Colors.black,
                     onPressed: () {
+                      var updateImg = image == null
+                          ? newImage == null
+                              ? null
+                              : File.fromRawPath(newImage)
+                          : image;
                       widget.handleUpdate(widget.index, name, phoneNumber,
-                          image, widget.contactContext);
+                          updateImg, widget.contactContext);
                       Navigator.pop(context);
                     },
                     child: Text(
